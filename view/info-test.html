@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>testInfo</title>
+	<style>
+		/*放到public.css里*/
+		.public-bg{background:rgba(0,0,0,.3);position:fixed;top:0;left:0;width:100%;height:100%;z-index:3}
+		.public-bg .alert-info{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:5.6rem;background:#fff;border-radius:.04rem}
+		.public-bg .alert-info-top{height:2.2rem;border-bottom:.02rem solid #f4f4f5;display:flex;justify-content:center;align-items:center}
+		.public-bg .alert-info-bottom{height:1rem;display:flex}
+		.public-bg .alert-info-bottom a{border-left: 1px solid #f4f4f5;;font-size:.3rem;line-height:1rem;color:#00BFDB;text-align:center;width:100%;height:100%;display:block;}
+		.public-bg .alert-info-bottom a:first-child{border-left: none;}
+		.public-bg .alert-info-title{font-size:.28rem;line-height:.4rem;color:#B6B6B6}
+		.public-bg-low{background:rgba(0,0,0,.3);position:fixed;top:0;left:0;width:100%;height:100%;z-index:3;z-index:1;width:100%;height:100%;position:fixed;top:0;left:0;display:none}
+		.public-bg-low .alert-info{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:5.6rem;background:#fff;border-radius:.04rem}
+		.public-bg-low .alert-info-top{height:2.2rem;border-bottom:.02rem solid #f4f4f5;display:flex;justify-content:center;align-items:center}
+		.public-bg-low .alert-info-bottom{height:1rem;display:flex}
+		.public-bg-low .alert-info-bottom a{font-size:.3rem;line-height:1rem;color:#00BFDB;text-align:center;width:100%;height:100%;display:block;}
+		.public-bg-low .alert-info-bottom a:first-child{border-left: none;}
+		.public-bg-low .alert-info-title{font-size:.28rem;line-height:.4rem;color:#B6B6B6}
+		.public-none{display:flex;justify-content:center;padding-top:2.32rem}
+		.public-none img{width:2.2rem;height:3.08rem}
+		/*放到public.css里*/
+	</style>
+</head>
+<body>
+
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<script src="../static/setSize/setSize.js"></script>
+	<script>
+		// 放到public.js-----
+		var Info=function(){}; 
+		Info.prototype.alert = function (infomation,btn,fun){
+		    var btnDom='';
+		    btn = btn || '确定';
+
+		    if (btn instanceof Array) {
+		    	btn.forEach(function(val){
+		    		btnDom += `<a href="javascript: void(0)">${val}</a>`
+		    	});
+		    }else{
+		    	btnDom = `<a href="javascript: void(0)">${btn}</a>`;
+		    }
+
+		    $('body').append(`
+		            <div class="public-bg">
+		                <div class="alert-info">
+		                    <div class="alert-info-top">
+		                        <p class="alert-info-title">${infomation}</p>
+		                    </div>
+		                    <div class="alert-info-bottom">
+		                        ${btnDom}
+		                    </div>
+		                </div>
+		            </div>
+		        `);
+		    $('.alert-info-bottom a').click(function () {
+		        $('.public-bg').remove();
+		    })
+
+		    $('.alert-info-bottom a:first-child').click(function () {
+		        if (fun == undefined) {
+		            return;
+		        } else {
+		            fun();
+		        }
+		    })
+		}
+		var info = new Info();
+		// 放到public.js中---
+
+		info.alert('确定退出？',['确定','取消'],function(){		//示例 info.alert() 参数:提示消息,按钮(字符串 or 数组),第一个按钮的回调函数
+			alert(1);
+		});
+
+	</script>
+</body>
+</html>

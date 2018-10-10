@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>R@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="3"></rect>
+        <polygon id="path-3" points="0 0 14 0 14 16 0 16"></polygon>
+    </defs>
+    <g id="培训资料" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="培训资料详情" transform="translate(-20.000000, -310.000000)">
+            <g id="R" transform="translate(20.000000, 310.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#8B60D7" xlink:href="#path-1"></use>
+                <g id="Page-1" mask="url(#mask-2)">
+                    <g transform="translate(14.000000, 12.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-2" stroke="none" fill="none"></g>
+                        <path d="M6.64296672,2.81998649 L3.56942524,2.81998649 L3.56942524,7.09291622 L6.64296672,7.09291622 C8.54868194,7.09291622 9.47450303,6.39391574 9.43200086,4.99606803 C9.52297969,3.50036638 8.5971586,2.77086796 6.64296672,2.81998649 Z M14,15.9263605 L9.49877917,15.9263605 L5.63849395,9.77160071 L3.56942524,9.77160071 L3.56942524,16 L0,16 L0,0 L7.21788029,0 C11.0777874,0.0981604494 13.0741789,1.69209918 13.2195333,4.77545606 C13.2680099,7.4299261 11.9791054,9.02386483 9.35962619,9.55098874 L14,15.9263605 Z" id="Fill-1" stroke="none" fill="#FFFFFF" fill-rule="evenodd" mask="url(#mask-4)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

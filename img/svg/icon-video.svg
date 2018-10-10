@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>视频@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="3"></rect>
+    </defs>
+    <g id="培训资料" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="培训资料详情" transform="translate(-20.000000, -464.000000)">
+            <g id="视频" transform="translate(20.000000, 464.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#00BFDB" xlink:href="#path-1"></use>
+                <polygon id="Triangle" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(21.500000, 19.500000) rotate(90.000000) translate(-21.500000, -19.500000) " points="21.5 12 30 27 13 27"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

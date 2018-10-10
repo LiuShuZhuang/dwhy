@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="screen-orientation" content="portrait/landscape">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <base href="../">
+    <!-- <link rel="stylesheet" href="static/layui/2.3.0/css/layui.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <!-- <link rel="stylesheet/less" type="text/css" href="css/public.less"> -->
+    <!-- <link rel="stylesheet" href="static/weui/jquery-weui-1.2.0.min.css">
+    <link rel="stylesheet" href="static/weui/weui-1.1.2.min.css"> -->
+    <title>PayWay门店通</title>
+    <style>
+        .task-nav{
+            display: flex;
+        }
+        .task-nav-list{
+            line-height: .36rem;
+            font-size: .26rem;
+            padding-bottom: .38rem;
+            margin-top: .7rem;
+            margin-right: .92rem;
+        }
+        .task-nav-list.hover{
+            padding-bottom: .34rem;
+            border-bottom: .04rem solid #00BFDB;
+            color: #00BFDB;
+        }
+        .task-other-center{
+            position: static;
+        }
+    </style>
+</head>
+<body style="padding-bottom: 1.5rem">
+    <section class="task-top" style="padding-bottom: 0">
+        <p class="task-title">科勒设计中心</p>
+        <ul class="task-top-items">
+            <li class="task-top-info">任务日期: 2000-00-00</li>
+            <li class="task-top-info">任务类型: 自建任务</li>
+        </ul>
+        <ul class="task-nav">
+            <li class="task-nav-list">原任务</li>
+            <li class="task-nav-list hover">原任务</li>
+        </ul>
+    </section>
+
+    <section class="task-list">
+        <div class="task-list-main">
+            <p class="task-three">从进门店到展厅是否有吊旗、X展架、地贴、龙门架
+                <img class="task-list-center task-issue" src="img/svg/icon-issue.svg" alt="">
+            </p>
+            <div class="task-judge">
+                <div class="public-radio">
+                    <input type="radio" name="task-judge-2">
+                    <div class="public-style"></div>
+                </div>
+                <div class="task-judge-info">忽略</div>
+            </div>
+            <div class="task-judge">
+                <div class="public-radio">
+                    <input type="radio" name="task-judge-2">
+                    <div class="public-style"></div>
+                </div>
+                <div class="task-judge-info">正常</div>
+            </div>
+            <div class="task-judge">
+                <div class="public-radio">
+                    <input type="radio" name="task-judge-2">
+                    <div class="public-style"></div>
+                </div>
+                <div class="task-judge-info">异常
+                    
+                </div>
+            </div>
+            <div class="task-list-center task-other-center">
+                <span class="task-bule-number">15</span>
+                <span>分</span>
+            </div>
+            
+            <textarea class="task-remark-info" style="height: 1.8rem;padding-top: .3rem" placeholder="请输入内容"></textarea>
+            <p class="task-bottom-title">整改照片</p>
+            <ul class="task-up-items">
+                <li class="task-up-img">
+                    <img class="task-up-close" src="img/svg/icon-imgclose.svg" alt="">
+                    <img src="img/svg/icon-audit-pass.svg" alt="">
+                </li>
+                <li class="task-up-img">
+                    <img class="task-up-close" src="img/svg/icon-imgclose.svg" alt="">
+                    <img src="img/svg/icon-audit-pass.svg" alt="">
+                </li>
+                <li class="task-up-add"></li>
+            </ul>
+        </div>
+    </section>
+    <section class="task-bottom">
+        <p class="task-bottom-title">整改备注</p>
+        <textarea class="task-remark-info" placeholder="请输入内容"></textarea>
+    </section>
+    <section class="task-bottom">
+        <p class="task-bottom-title">整改照片</p>
+        <ul class="task-up-items">
+            <li class="task-up-img">
+                <img class="task-up-close" src="img/svg/icon-imgclose.svg" alt="">
+                <img src="img/svg/icon-audit-pass.svg" alt="">
+            </li>
+            <li class="task-up-img">
+                <img class="task-up-close" src="img/svg/icon-imgclose.svg" alt="">
+                <img src="img/svg/icon-audit-pass.svg" alt="">
+            </li>
+            <li class="task-up-add"></li>
+        </ul>
+    </section>
+    <div class="public-btn-div public-float-bottom" style="margin-top: .3rem">
+        <a class="public-bottom-btn" href="javascript:void(0)">提交</a>
+    </div>
+
+    <script src="static/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="static/weui/jquery-weui-1.2.0.min.js"></script> -->
+    <script src="static/setSize/setSize.js"></script>
+    <script src="static/less/3.0.4/less.min.js"></script>
+    <!-- <script src="static/layui/2.3.0/layui.all.js"></script>
+    <script type="text/javascript" src="static/assets/data.js"></script>
+    <script type="text/javascript" src="static/assets/province.js"></script> -->
+    <script src="js/public.js"></script>
+    <script>
+
+        $(function(){
+            $('.task-list').on('click','.task-one',function(){
+                var display= $(this).siblings('.task-list-main').css('display');
+                
+                if (display=='block') {
+                    $(this).children('.task-one-btn').removeClass('task-one-up');
+                }else{
+                    $(this).children('.task-one-btn').addClass('task-one-up');
+                }
+                $(this).siblings('.task-list-main').slideToggle();
+            })
+            $('.task-up-items').on('click','.task-up-close',function(){
+                $(this).parent('.task-up-img').remove();
+            })
+            $('.task-nav-list').click(function(){
+                $(this).addClass('hover').siblings('.task-nav-list').removeClass('hover');
+            })
+        })
+    </script>
+</body>
+
+</html>

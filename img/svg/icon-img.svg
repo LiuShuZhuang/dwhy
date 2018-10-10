@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>图@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="3"></rect>
+    </defs>
+    <g id="培训资料" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="培训资料详情" transform="translate(-20.000000, -386.000000)">
+            <g id="图" transform="translate(20.000000, 386.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#E9B332" xlink:href="#path-1"></use>
+                <path d="M10.7498956,12.7497557 C11.2498916,12.2493931 11.7499271,12 12.4997832,12 C13.2496394,12 13.7501478,12.2493931 14.2496709,12.7497557 C14.7501793,13.2497635 15,13.8743497 15,14.4996847 C15,15.1250197 14.7501793,15.7496059 14.2496709,16.2500867 C13.7501478,16.750134 13.2496394,17 12.4997832,17 C11.874936,17 11.2498916,16.750134 10.7498956,16.2500867 C10.2495448,15.7500788 10,15.2500315 10,14.4996847 C10,13.7494955 10.2495448,13.2494482 10.7498956,12.7497557" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                <polygon id="Fill-3" fill="#FFFFFF" mask="url(#mask-2)" points="29.9121094 27.2470884 10 27.2470884 10 24.4951867 14.5005356 19.953935 16.8191731 22.2928931 24.0474898 15 29.9121094 20.9173978"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

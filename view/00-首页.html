@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="screen-orientation" content="portrait/landscape">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <base href="../">
+    <!-- <link rel="stylesheet" href="static/layui/2.3.0/css/layui.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <!-- <link rel="stylesheet/less" type="text/css" href="css/public.less"> -->
+    <link rel="stylesheet" href="static/Swiper/3.4.0/css/swiper.min.css">
+    <link rel="stylesheet" href="css/dyhy.css">
+    <!-- <link rel="stylesheet" href="static/weui/jquery-weui-1.2.0.min.css">
+    <link rel="stylesheet" href="static/weui/weui-1.1.2.min.css"> -->
+    <title>PayWay门店通</title>
+</head>
+
+<body>
+    <section class="new-top">
+        <p class="new-top-title">对外汉语</p>
+        <select name="" id="language">
+            <option value="">Engligh</option>
+            <option value="">汉语</option>
+        </select>
+    </section>
+    <section class="index-often">
+        <p class="public-title index-title">导航</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="index-menu swiper-slide">
+                    <div class="index-menu-list">
+                        <div class="index-menu-img index-menu-task">
+                            <img src="img/svg/icon-index-3.svg" alt="">
+                        </div>
+                        <p class="index-menu-title">能力测试</p>
+                    </div>
+                    <div class="index-menu-list">
+                        <div class="index-menu-img index-menu-analyze">
+                            <img src="img/svg/icon-index-5.svg" alt="">
+                        </div>
+                        <p class="index-menu-title">进阶计划</p>
+                    </div>
+                    <div class="index-menu-list">
+                        <div class="index-menu-img index-menu-data">
+                            <img src="img/svg/icon-index-6.svg" alt="">
+                        </div>
+                        <p class="index-menu-title">价格明细</p>
+                    </div>
+                    <div class="index-menu-list">
+                        <div class="index-menu-img index-menu-shop">
+                            <img src="img/svg/icon-index-1.svg" alt="">
+                        </div>
+                        <p class="index-menu-title">联系我们</p>
+                    </div>
+                </div>
+                <div class="index-menu swiper-slide">
+                    <div class="index-menu-list">
+                        <div class="index-menu-img index-menu-number">
+                            <img src="img/svg/icon-index-4.svg" alt="">
+                        </div>
+                        <p class="index-menu-title">销量管理</p>
+                    </div>
+                    <div class="index-menu-list">
+                        <div class="index-menu-img index-menu-data">
+                            <img src="img/svg/icon-index-6.svg" alt="">
+                        </div>
+                        <p class="index-menu-title">培训资料</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- 门店统计 -->
+    <section class="index-shop index-shop-div">
+        <div class="public-title index-title index-shop-title">门店统计
+        </div>
+        <ul class="index-stats-items">
+            <li class="index-stats-list index-stats-hover">新增</li>
+            <li class="index-stats-list">升级</li>
+            <li class="index-stats-list">降级</li>
+            <li class="index-stats-list">重装</li>
+            <li class="index-stats-list">关闭</li>
+        </ul>
+        <ul class="index-class-items">
+            <!-- <li class="index-class-list">
+                <p class="index-class-title">专卖店</p>
+                <p class="index-class-number blue">86</p>
+            </li>
+            <li class="index-class-list">
+                <p class="index-class-title">专营店</p>
+                <p class="index-class-number violet">25</p>
+            </li> -->
+        </ul>
+        <div class="index-meter">
+            <ul class="index-meter-scaleplate">
+                <!-- <li class="index-meter-number">
+                    <p class="index-meter-title">20</p>
+                </li>
+                <li class="index-meter-number">
+                    <p class="index-meter-title">15</p>
+                </li>
+                <li class="index-meter-number">
+                    <p class="index-meter-title">10</p>
+                </li>
+                <li class="index-meter-number">
+                    <p class="index-meter-title">5</p>
+                </li>
+                <li class="index-meter-number">
+                    <p class="index-meter-title">0</p>
+                </li> -->
+            </ul>
+            <ul class="index-height">
+            </ul>
+        </div>
+    </section>
+    <!-- 门店统计 END-->
+
+    <!-- 销售统计 -->
+    <section class="index-shop index-market-div">
+        <div class="public-title index-title index-shop-title">销售统计
+            <select>
+                <option value="">2017年</option>
+                <option value="010">2018年</option>
+            </select>
+        </div>
+        <ul class="index-class-items">
+            <!-- <li class="index-class-list">
+                <p class="index-class-title">本年销量(台)</p>
+                <p class="index-class-number Jacinth">3800</p>
+            </li>
+            <li class="index-class-list">
+                <p class="index-class-title">当月销量(台)</p>
+                <p class="index-class-number wethet">350</p>
+            </li> -->
+        </ul>
+        <!-- <p class="index-title-two">6月新增专卖店3家，专营店8家</p> -->
+        <div class="index-meter">
+            <ul class="index-meter-scaleplate">
+                <!-- <li class="index-meter-number">
+                    <p class="index-meter-title">150</p>
+                </li>
+                <li class="index-meter-number">
+                    <p class="index-meter-title">120</p>
+                </li>
+                <li class="index-meter-number">
+                    <p class="index-meter-title">90</p>
+                </li>
+                <li class="index-meter-number">
+                    <p class="index-meter-title">60</p>
+                </li>
+                <li class="index-meter-number">
+                    <p class="index-meter-title">30</p>
+                </li>
+                <li class="index-meter-number">
+                    <p class="index-meter-title">0</p>
+                </li> -->
+            </ul>
+            <ul class="index-height">
+            </ul>
+        </div>
+    </section>
+    <!-- 销售统计 END-->
+
+    <script src="static/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="static/weui/jquery-weui-1.2.0.min.js"></script> -->
+    <script src="static/setSize/setSize.js"></script>
+    <!-- <script src="static/less/3.0.4/less.min.js"></script> -->
+    <!-- <script src="static/layui/2.3.0/layui.all.js"></script> -->
+    <!-- <script type="text/javascript" src="static/assets/data.js"></script>
+    <script type="text/javascript" src="static/assets/province.js"></script> -->
+    <script src="js/public.js"></script>
+    <script src="static/Swiper/3.4.0/js/swiper.min.js"></script>
+</body>
+    <script>
+        $(function(){
+            var mySwiper = new Swiper('.swiper-container', {
+                // autoplay: 2000,//可选选项，自动滑动
+                onSlideChangeEnd: function (swiper) {
+                    var number = swiper.activeIndex;
+                },
+                autoplayDisableOnInteraction: false,    //注意此参数，默认为true
+                pagination: '.swiper-pagination'
+            }) 
+            
+            $('.index-stats-items').on('click','.index-stats-list',function(){
+                $(this).addClass('index-stats-hover').siblings('.index-stats-list').removeClass('index-stats-hover');
+            })
+            $('.index-shop-div').on('click','.index-height-list',function(){
+                $('.index-shop-div .index-height-title').removeClass('index-shop-hover');
+                $(this).find('.index-height-title').addClass('index-shop-hover');
+            })
+        })
+        
+        var data1={
+            class: {
+                '专卖店': 100,
+                '专营店': 25
+            },
+            scale: [0,5,10,15,20],
+            info: [      //模拟数据，title为年份，number为数量
+                {
+                    'title': '2014',
+                    'number': [19,5]
+                }, {
+                    'title': '2015',
+                    'number': [8,2]
+                }, {
+                    'title': '2015',
+                    'number': [0,10]
+                }, {
+                    'title': '2016',
+                    'number': [20,19]
+                }, {
+                    'title': '2017',
+                    'number': [-1,20]
+                }
+            ]
+        };
+        var data2 ={
+            class: {
+                '本年销量(台)': 100,
+                '当月销量(台)': 25
+            },
+            scale: [0, 50, 100, 150, 200],
+            info:[      //模拟数据，number内为高度（请传入比例 20意为20%的高）
+                {
+                    'title': '1月',
+                    'number': [20]
+                }, {
+                    'title': '2月',
+                    'number': [90]
+                }, {
+                    'title': '3月',
+                    'number': [100]
+                }, {
+                    'title': '4月',
+                    'number': [200]
+                }, {
+                    'title': '5月',
+                    'number': [199]
+                }, {
+                    'title': '6月',
+                    'number': [10]
+                }
+                , {
+                    'title': '7月',
+                    'number': [123]
+                }
+                , {
+                    'title': '8月',
+                    'number': [250]
+                }
+                , {
+                    'title': '9月',
+                    'number': [160]
+                }
+                , {
+                    'title': '10月',
+                    'number': [20]
+                }
+                , {
+                    'title': '11月',
+                    'number': [60]
+                }
+                , {
+                    'title': '12月',
+                    'number': [90]
+                }
+            ]
+        } 
+
+        function heightInit(node,data){
+            var maxHeight=data.scale[data.scale.length-1];
+
+            $(node).find('.index-height,.index-class-items,.index-meter-scaleplate').html('');
+            console.log(maxHeight);
+
+            $(node).find('.index-class-items').append(function(){
+                var dom='';
+                for(key in data.class){
+                    dom +=
+                    `<li class="index-class-list">
+                        <p class="index-class-title">${key}</p>
+                        <p class="index-class-number">${data.class[key]}</p>
+                    </li>`;
+                }
+                return dom;                                
+            })
+
+            $(node).find('.index-meter-scaleplate').append(function(){
+                var dom='';
+                $(data.scale).each(function (index,val){
+                    dom += 
+                        `<li class="index-meter-number">
+                            <p class="index-meter-title">${val}</p>
+                        </li>`
+                })
+                
+                return dom;
+            })
+
+            $(data.info).each(function(index,val){
+                $(node).find('.index-height').append(function(){
+                    var dom='';
+                    var child='';
+
+                    $(val.number).each(function(index,val){
+                        child += `<div class="index-height-color" data-height='${val}'></div>`
+                    })
+                    
+                    dom=`<li class="index-height-list">
+                            <p class="index-height-title">${val.title}</p>
+                            <div class="index-height-all">
+                                ${child}
+                            </div>
+                        </li>`
+                    return dom;
+                });
+            })
+
+            $(node).find('.index-height-color').each(function(){
+                var height=$(this).attr('data-height')/maxHeight*100 + "%";
+                $(this).animate({'height':height});
+            })
+        }
+
+        heightInit('.index-shop-div',data1);
+        heightInit('.index-market-div', data2);
+    </script>
+</html>

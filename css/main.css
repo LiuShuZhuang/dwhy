@@ -1,0 +1,188 @@
+.whiteBg{
+    background: #fff;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.searchCon {
+    width: 100%;
+    position: relative;
+}
+.searchCon .wrapper{
+    padding: 0.4rem 0.4rem 0;
+}
+.searchCon .wrapper .inputCon{
+    width: 100%;
+    height: 0.9rem;
+    position: relative;
+}
+.searchCon .wrapper .inputCon .inputWrapper{
+    padding: 0 0.25rem 0 0.7rem;
+    height: 0.88rem;
+    border: 0.01rem solid #eaeaea;
+    border-radius: 0.1rem;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.06);
+}
+.searchCon .wrapper .inputCon .inputWrapper .iconSearch{
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url("../img/svg/icon-search.svg") no-repeat 50% 50%;
+    background-size: 0.3rem; 
+    position: absolute;
+    top: 50%;
+    left: 0.25rem;
+    margin: -0.15rem 0 0 0;
+}
+.searchCon .wrapper .inputCon .inputWrapper .inputTxt{
+    height: 0.86rem;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.trainRefPanel{
+    width: 100%;
+    position: relative;
+    margin: 0.25rem 0 0 0;
+}
+.trainRefPanel ul{
+    padding: 0 0 0 0.4rem;
+}
+.trainRefPanel ul li{
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #F4F4F5;
+    padding: 0.3rem 0;
+}
+.trainRefPanel ul li .icon{
+    width: 0.82rem;
+    height: 0.7rem;
+    float: left;
+    margin: 0.1rem 0 0 0;
+}
+.trainRefPanel ul li.lst .icon{
+    background: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.05rem 0 0 0;
+}
+.trainRefPanel ul li .txtConAll{
+    padding: 0 0.4rem 0 1.1rem;
+    height: 0.9rem;
+}
+.trainRefPanel ul li .txtConAll .txtCon{
+    width: 100%;
+    height: 0.9rem;
+    background: url("../img/svg/icon-right.svg")no-repeat 100% 50%;
+    background-size: 0.15rem auto;
+}
+.trainRefPanel ul li.lst .txtConAll .txtCon{
+    background: url("../img/svg/icon-download.svg")no-repeat 100% 50%;
+    background-size: 0.45rem auto;
+}
+.trainRefPanel ul li .txtConAll .txtCon .titleTxt{
+    font-size: 0.32rem;
+    line-height: 0.44rem;
+    height: 0.44rem;
+    color: #484848;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.trainRefPanel ul li .txtConAll .txtCon .timeTxt{
+    width: 100%;
+    font-size: 0.24rem;
+    line-height: 0.34rem;
+    height: 0.34rem;
+    color: #A5A5A5;
+    margin: 0.1rem 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.main .branch-head{
+    background: #fff;
+}
+.agentTableCon .agentTable{
+    width: 100%;
+    position: relative;
+    border-collapse: collapse;
+}
+.agentTableCon .agentTable .greyTr{
+    height: 0.9rem;
+    line-height: 0.9rem;
+    background: #F9F9FB;
+    text-align: center;
+}
+.agentTableCon .agentTable .greyTr .greyTh:nth-of-type(1){
+    width: 55%;
+    text-align: left;
+}
+.agentTableCon .agentTable .greyTr .greyTh:nth-of-type(2){
+    width: 15%;
+}
+.agentTableCon .agentTable .greyTr .greyTh:nth-of-type(3){
+    width: 15%;
+}
+.agentTableCon .agentTable .greyTr .greyTh:nth-of-type(4){
+    width: 15%;
+}
+.agentTableCon .agentTable .greyTr .greyTh{
+    font-size: 0.24rem;
+    color: #484848;
+}
+.agentTableCon .agentTable .greyTr .greyTh:first-child{
+    padding: 0 0 0 0.4rem; 
+}
+.agentTableCon .agentTable .whiteTr{
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background: #fff;
+    text-align: center;
+}
+.agentTableCon .agentTable .whiteTr .whiteTd:first-child{
+    padding: 0 0 0 0.4rem;
+    text-align: left;
+}
+
+.agentTableCon .agentTable .whiteTr .whiteTd h1{
+    color: #484848;
+    font-size: 0.3rem;
+    border-bottom: 1px solid #F4F4F5;
+}
+.agentTableCon .agentTable .whiteTr:last-child .whiteTd h1{
+    border-bottom: none;
+}
+.agentTableCon .agentTable:last-child .whiteTr:last-child .whiteTd h1{
+    border-bottom: 1px solid #F4F4F5;
+}
+.agentTableCon .agentTable:last-child{
+    width: 100%;
+    position: relative;
+    margin: 0 0 0.5rem 0;
+}
+.agentPanel .public-btn-div{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.agentTableCon .agentTable .agentTitle .whiteTd h1{
+    border: none;
+    font-size: .26rem;
+}
+.agentTableCon .agentTable .agentTitleOther{
+    font-size: .24rem;
+}
+.agentTableCon .agentTable .greyTr .greyTh.textColor{
+    color: #00BFDB;
+}
+.agentTableCon .agentTable .whiteTr .whiteTd h1{
+    font-size: .28rem;
+    line-height: 1.1rem;
+}

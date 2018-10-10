@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="35px" viewBox="0 0 41 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>文件夹@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 41 0 41 35 0 35"></polygon>
+    </defs>
+    <g id="培训资料" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-20.000000, -161.000000)" id="文件夹">
+            <g transform="translate(20.000000, 161.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M0,4 L38.26668,4 C39.7761545,4 40.9997998,5.20657426 41,6.6952337 L41,32.3041246 C41,33.7929815 39.7761545,35 38.26668,35 L2.73352018,35 C1.22384549,35 0,33.7929815 0,32.3041246 L0,4 Z" id="Fill-1" fill="#00BFDB" mask="url(#mask-2)"></path>
+                <path d="M17.0424443,0 L2.75021401,0 C1.23152103,0 0.000201418167,1.19394457 0,2.66678061 L0,4 L22,4 L20.4746099,1.78112563 C19.7094726,0.668245635 18.4215041,0 17.0424443,0 Z" id="Fill-3" fill="#2BDEF9" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

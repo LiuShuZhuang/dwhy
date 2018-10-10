@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="screen-orientation" content="portrait/landscape">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <base href="../">
+    <!-- <link rel="stylesheet" href="static/layui/2.3.0/css/layui.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet/less" type="text/css" href="css/public.less">
+    <!-- <link rel="stylesheet" href="static/weui/jquery-weui-1.2.0.min.css">
+    <link rel="stylesheet" href="static/weui/weui-1.1.2.min.css"> -->
+    <title>PayWay门店通</title>
+</head>
+
+<body>
+    <section class="public-search">
+        <div class="public-search-div">
+            <img class="public-search-btn" src="img/svg/icon-search.svg" alt="">
+            <input class="public-search-input" type="text" placeholder="请输入关键字">
+        </div>
+    </section>
+
+    <section class="store-filter sales-filter">
+        <ul class="store-filter-items">
+            <li class="store-filter-list">全部</li>
+            <li class="store-filter-list">产品线</li>
+        </ul>
+        <ul class="store-down-items">
+            <!-- 全部 -->
+            <li class="store-down-list">
+                <p class="store-down-judge store-down-hover">全部</p>
+                <p class="store-down-judge">华东区</p>
+                <p class="store-down-judge">华中区</p>
+                <p class="store-down-judge">华北区</p>
+                <p class="store-down-judge">华南区</p>
+                <p class="store-down-judge">西北区</p>
+                <p class="store-down-judge">西南区</p>
+                <ul class="store-down-child">
+                    <li class="store-down-judge">山东</li>
+                    <li class="store-down-judge">江苏</li>
+                </ul>
+            </li>
+            <li class="store-down-list">
+                <p class="store-down-judge">产品线1</p>
+                <p class="store-down-judge">产品线2</p>
+                <p class="store-down-judge">产品线3</p>
+            </li>
+            <!-- 全部 END-->
+        </ul>
+    </section>
+    <!-- 黑色透明背景 -->
+    <div class="public-bg-low"></div>
+    <!-- 黑色透明背景 END-->
+    <section class="store-main">
+        <div class="create-list">
+            <p class="create-title">
+                 电热水器
+            </p>
+            <ul class="create-info-items">
+                <li class="create-info-list">日期：SBP(专营店)</li>
+                <li class="create-info-list">数量：<span class="text-pass">10</span></li>
+                <li class="create-info-list">来源：促销员上传</li>
+            </ul>
+        </div>
+        <div class="create-list">
+            <p class="create-title">
+                 金盛铜川生活馆
+            </p>
+            <ul class="create-info-items">
+                <li class="create-info-list">日期：SBP(专营店)</li>
+                <li class="create-info-list">数量：
+                    <span class="text-pass">10</span>
+                </li>
+                <li class="create-info-list">来源：促销员上传</li>
+            </ul>
+        </div>
+        <div class="create-list">
+            <p class="create-title">
+                金盛铜川生活馆
+            </p>
+            <ul class="create-info-items">
+                <li class="create-info-list">日期：SBP(专营店)</li>
+                <li class="create-info-list">数量：
+                    <span class="text-pass">10</span>
+                </li>
+                <li class="create-info-list">来源：促销员上传</li>
+            </ul>
+        </div>
+        <div class="create-list">
+            <p class="create-title">
+                金盛铜川生活馆
+            </p>
+            <ul class="create-info-items">
+                <li class="create-info-list">日期：SBP(专营店)</li>
+                <li class="create-info-list">数量：
+                    <span class="text-pass">10</span>
+                </li>
+                <li class="create-info-list">来源：促销员上传</li>
+            </ul>
+        </div>
+        <div class="create-list">
+            <p class="create-title">
+                金盛铜川生活馆
+            </p>
+            <ul class="create-info-items">
+                <li class="create-info-list">日期：SBP(专营店)</li>
+                <li class="create-info-list">数量：
+                    <span class="text-pass">10</span>
+                </li>
+                <li class="create-info-list">来源：促销员上传</li>
+            </ul>
+        </div>
+    </section>
+    <section class="public-none">
+        <img src="img/img-none.png" alt="">
+    </section>
+
+    <div class="public-bottom-simple public-float-bottom">
+        <a class="public-simple-btn pass" href="javascript: void(0)">
+            <span>上传销量数据</span>    
+        </a>
+        <a class="public-simple-btn reject" href="javascript: void(0)">
+            <span>无销量上传</span>
+        </a>
+    </div>
+
+    <script src="static/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="static/weui/jquery-weui-1.2.0.min.js"></script> -->
+    <script src="static/setSize/setSize.js"></script>
+    <script src="static/less/3.0.4/less.min.js"></script>
+    <!-- <script src="static/layui/2.3.0/layui.all.js"></script>
+    <script type="text/javascript" src="static/assets/data.js"></script>
+    <script type="text/javascript" src="static/assets/province.js"></script> -->
+    <script src="js/public.js"></script>
+    <script>
+        $(function(){
+            $('.store-filter').on('click','.store-filter-list',function(){
+                if ($(this).hasClass('store-filter-hover')) {
+                    $(this).removeClass('store-filter-hover');
+                    $('.store-down-list').slideUp();
+                    $('.public-bg-low').hide();
+                    return;
+                }
+                $(this).addClass('store-filter-hover').siblings('.store-filter-list').removeClass('store-filter-hover');
+                var index = $(this).index();
+
+                $('.store-down-list').eq(index).slideDown().siblings('.store-down-list').hide();
+                $('.public-bg-low').show();
+            })
+
+            $('.public-bg-low').click(function () {
+                $('.store-filter-list').removeClass('store-filter-hover');
+                $('.store-down-list').slideUp();
+                $('.public-bg-low').hide();
+            })
+            
+            $('.store-filter').on('click','.store-down-judge', function () {
+                $(this).addClass('store-down-hover').siblings('.store-down-judge').removeClass('store-down-hover')
+            })
+            
+            judgeLength();
+        })
+
+        function judgeLength(){     //判断是否存在数据
+            if (!$('.store-main .create-list').length == true) {
+                $('.store-main').hide();
+                $('.public-none').show();
+            }else{
+                $('.public-none').hide();
+                $('.store-main').show();
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>X@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="3"></rect>
+    </defs>
+    <g id="培训资料" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="培训资料详情" transform="translate(-20.000000, -156.000000)">
+            <g id="X" transform="translate(20.000000, 156.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#00D1A5" xlink:href="#path-1"></use>
+                <polygon id="Page-1" fill="#FFFFFF" mask="url(#mask-2)" points="23.1221051 12 19.7765573 16.9405006 16.3996223 12 12.2409889 12 17.8065895 19.5668993 11.5217836 28.165807 15.7117479 28.165807 19.7765573 22.1934668 23.8100919 28.165807 28 28.165807 21.7151941 19.5668993 27.2808509 12"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

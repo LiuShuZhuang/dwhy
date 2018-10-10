@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="screen-orientation" content="portrait/landscape">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <base href="../">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <!-- <link rel="stylesheet" href="static/layui/2.3.0/css/layui.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <!-- <link rel="stylesheet/less" type="text/css" href="css/public.less"> -->
+    <!-- <link rel="stylesheet" href="static/weui/jquery-weui-1.2.0.min.css">
+    <link rel="stylesheet" href="static/weui/weui-1.1.2.min.css"> -->
+    <title>PayWay门店通</title>
+    <style>
+        #container {width:300px; height: 180px; }  
+    </style>
+</head>
+<body>
+    <div class="map">
+        <div id="container"></div>
+    </div>
+    <div class="map-main">
+        <div class="map-coor">
+            <img src="img/svg/icon-coor-map.svg" alt="">
+        </div>
+        <section class="map-info">
+            <p class="map-info-title">门店</p>
+            <div class="map-info-list">
+                <p class="map-list-title">科勒设计中心</p>
+                <p class="map-info-text">914m | 铜川路185号金盛好来福</p>
+                <div class="public-radio task-list-center">
+                    <input type="checkbox" name="task-judge-1">
+                    <div class="public-style"></div>
+                </div>
+            </div>
+            <div class="map-info-list">
+                <p class="map-list-title">科勒设计中心</p>
+                <p class="map-info-text">914m | 铜川路185号金盛好来福</p>
+                <div class="public-radio task-list-center">
+                    <input type="checkbox" name="task-judge-1">
+                    <div class="public-style"></div>
+                </div>
+            </div>
+            <div class="map-info-list">
+                <p class="map-list-title">科勒设计中心</p>
+                <p class="map-info-text">914m | 铜川路185号金盛好来福</p>
+                <div class="public-radio task-list-center">
+                    <input type="checkbox" name="task-judge-1">
+                    <div class="public-style"></div>
+                </div>
+            </div>
+            <div class="public-btn-div public-float-bottom">
+                <a class="public-bottom-btn" href="javascript:void(0)">签到并巡检</a>
+            </div>
+        </section>
+        <section class="map-loca" style="display: none">
+            <p class="map-loca-list">门店名称
+                <span class="map-loca-right">喜盈门国际店</span>
+            </p>
+            <p class="map-loca-list">逆解析地址
+                <input class="map-loca-right" type="text" placeholder="请先定位">
+            </p>
+            <p class="public-height-line"></p>
+            <a class="public-btn-three">定位</a>
+            <div class="public-btn-div public-float-bottom">
+                <a class="public-bottom-btn" href="javascript:void(0)">提交</a>
+            </div>
+        </section>
+    </div>
+    <script src="static/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="static/weui/jquery-weui-1.2.0.min.js"></script> -->
+    <script src="static/setSize/setSize.js"></script>
+    <!-- <script src="static/less/3.0.4/less.min.js"></script> -->
+    <!-- <script src="static/layui/2.3.0/layui.all.js"></script>
+    <script type="text/javascript" src="static/assets/data.js"></script>
+    <script type="text/javascript" src="static/assets/province.js"></script> -->
+    <script src="js/public.js"></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.7&key=3f351301b9ba844bff952191d9339881"></script>
+    <script>
+         var map = new AMap.Map('container', {
+                center: [117.000923, 36.675807],
+                zoom: 11,
+                resizeEnable: true
+            });
+
+        $(function(){
+            $('.map-coor').click(function(){
+                $('.map-info').slideUp();
+                $('.map-loca').slideDown();
+            })
+            $('.public-bottom-btn').click(function(){
+                $('.map-loca').slideUp();
+                $('.map-info').slideDown();
+            })
+        })
+    </script>
+</body>
+
+</html>

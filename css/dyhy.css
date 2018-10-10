@@ -1,0 +1,79 @@
+body{
+    padding-top: 1.2rem;
+}
+.blue{
+    color: #00bfdb;
+}
+.new-top{
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: .41rem;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    background: #fff;
+    z-index: 100;
+}
+.new-top-title{
+    text-align: center;
+    width: 100%;
+}
+#language{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: .1rem;
+    font-size: .24rem;
+}
+.index-often{
+    padding-top: .1rem;
+    background: #fff;
+}
+#container{
+    height: 4rem;
+}
+.new-map-info{
+    background: #00bfdb;
+    padding: .1rem;
+    color: #fff;
+}
+.amap-marker-label{
+    background: #00bfdb;
+    padding: 0;
+    border: none;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.new-top-return{
+    position: absolute;
+    left: .2rem;
+    height: .35rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: .41rem;
+    overflow: hidden;
+}
+.new-top-return:after,.new-top-return:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 200%;
+    left: 0;
+    height: 2px;
+    background: #484848;
+    transform-origin: center;
+}
+.new-top-return:after{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.new-top-return:before{
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.public-bottom-simple .public-simple-btn{
+    color: #00bfdb;
+    font-size: .5rem;
+}

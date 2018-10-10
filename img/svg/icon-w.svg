@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>W@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="3"></rect>
+    </defs>
+    <g id="培训资料" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="培训资料详情" transform="translate(-20.000000, -235.000000)">
+            <g id="W" transform="translate(20.000000, 235.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#3D94D1" xlink:href="#path-1"></use>
+                <path d="M25.8918898,28 L22.8428742,28 L21.1097248,20.8159264 C20.9171657,19.9511126 20.6925199,19.0864611 20.5000392,18.088602 C20.3075193,18.9534159 20.0828343,19.8181892 19.7938977,20.8159264 L17.8681892,28 L14.819252,28 L11,13 L14.2736222,13 L15.8783858,20.1174495 C16.0709057,21.1153491 16.3598423,22.2127992 16.5845272,23.2771199 C16.7127563,22.5453106 16.9375588,21.7804531 17.1300787,20.9822228 L17.3225986,20.1174495 L19.184173,13.0664617 L22.1048028,13.0664617 L23.7736614,20.1174495 C23.9661813,21.1153491 24.2551179,22.1130458 24.3833469,23.1440341 C24.5760236,22.1462969 24.8006693,21.048725 25.0894884,20.0510284 L26.8226378,13 L30,13 L25.8918898,28 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

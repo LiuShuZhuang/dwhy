@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <script>
+        var worker = new Worker('worker12.js');
+        worker.onmessage = function (event) {
+            document.getElementById("result").innerHTML += event.data + ",";
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>
+        已经发现的所有质数：
+        <div id="result" style="width: 1500px; height:auto; border:1px solid red; word-wrap: break-word; ">
+        </div>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="screen-orientation" content="portrait/landscape">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <base href="../">
+    <link rel="stylesheet" href="static/layui/2.3.0/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <!-- <link rel="stylesheet" href="css/weui.css"> -->
+    <!-- <link rel="stylesheet" href="static/weui/jquery-weui-1.2.0.min.css">
+    <link rel="stylesheet" href="static/weui/weui-1.1.2.min.css"> -->
+    <title>PayWay门店通</title>
+    <style>
+        .color-style{
+            background: #99e5f1;
+        }
+    </style>
+</head>
+<body style="padding-bottom: 1.5rem">
+    <section class="filter-list">
+        <p class="filter-list-title">日期</p>
+        <ul class="filter-judge-items filter-judge-date">
+            <li class="filter-judge-list">今日</li>
+            <li class="filter-judge-list">昨日</li>
+            <li class="filter-judge-list">本周</li>
+            <li class="filter-judge-list">上周</li>
+            <li class="filter-judge-list">本月</li>
+            <li class="filter-judge-list">上月</li>
+        </ul>
+        <div class="filter-list-wide filter-list-date">自定义日期范围</div>
+        <div class="filter-list-select">
+            <div>
+                <!-- <input type="text"  placeholder="请选择初始日期"> -->
+                <p id="start">请选择开始日期</p>
+                <span>-</span>
+                <p id="end">请选择结束日期</p>
+                <!-- <input type="text" id="end" placeholder="请选择结束日期"> -->
+            </div>
+        </div>
+    </section>
+    <section class="filter-list">
+        <p class="filter-list-title">业务类型</p>
+        <ul class="filter-judge-items">
+            <li class="filter-judge-list">浴缸</li>
+            <li class="filter-judge-list">淋浴龙头</li>
+            <li class="filter-judge-list">镜柜</li>
+            <li class="filter-judge-list">淋浴房</li>
+            <li class="filter-judge-list">浴室龙头</li>
+            <li class="filter-judge-list">浴室配件</li>
+        </ul>
+    </section>
+    <section class="filter-list">
+        <p class="filter-list-title">大区</p>
+        <ul class="filter-judge-items">
+            <li class="filter-judge-list">华东区</li>
+            <li class="filter-judge-list">华中区</li>
+            <li class="filter-judge-list">华北区</li>
+            <li class="filter-judge-list">华南区</li>
+            <li class="filter-judge-list">西北区</li>
+            <li class="filter-judge-list">西南区</li>
+        </ul>
+    </section>
+    <section class="filter-list">
+        <p class="filter-list-title">省份</p>
+        <ul class="filter-judge-items">
+            <li class="filter-judge-list">上海</li>
+            <li class="filter-judge-list">浙江</li>
+            <li class="filter-judge-list">江苏</li>
+            <li class="filter-judge-list">安徽</li>
+            <li class="filter-judge-list">北京</li>
+        </ul>
+    </section>
+    <section class="filter-list">
+        <p class="filter-list-title">代理商</p>
+        <div class="filter-list-wide">上海起鑫贸易有限公司</div>
+    </section>
+    <section class="filter-list">
+        <p class="filter-list-title">产品线</p>
+        <ul class="filter-judge-items">
+            <li class="filter-judge-list">智能坐便系列</li>
+            <li class="filter-judge-list">坐便器</li>
+            <li class="filter-judge-list">洗脸化妆台</li>
+            <li class="filter-judge-list">公共用品</li>
+            <li class="filter-judge-list">浴室取暖干燥机</li>
+            <li class="filter-judge-list">艺术系列</li>
+        </ul>
+    </section>
+    <section class="filter-list">
+        <p class="filter-list-title">销售来源</p>
+        <ul class="filter-judge-items" style="padding-bottom: .2rem">
+            <li class="filter-judge-list">促销员上传</li>
+            <li class="filter-judge-list">店员俱乐部</li>
+        </ul>
+    </section>
+    <div class="public-btn-div public-float-bottom">
+        <a class="public-bottom-btn" href="javascript:void(0)">搜索</a>
+    </div>
+    <script src="static/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="static/weui/jquery-weui-1.2.0.min.js"></script> -->
+    <script src="static/setSize/setSize.js"></script>
+    <!--<script src="static/less/3.0.4/less.min.js"></script>-->
+    <script src="static/layui/2.3.0/layui.all.js"></script>
+    <!-- <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> -->
+    <!-- <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script> -->
+    <!-- <script type="text/javascript" src="static/assets/data.js"></script> -->
+    <!-- <script type="text/javascript" src="static/assets/province.js"></script> -->
+    <script src="js/public.js"></script>
+    <script>
+        $(function(){
+            $('.filter-list-date').click(function(){
+                $(this).hide();
+                $('.filter-list-select').show();
+                $('.filter-judge-date .filter-judge-list').removeClass('filter-judge-hover');
+            })
+            $(".filter-list").on('click','.filter-list-wide', function () {
+                if ($(this).hasClass('filter-list-date')) {
+                    return
+                }else{
+                    $(this).toggleClass('color-style');
+                }
+            })
+
+            $('.filter-judge-items').on('click','.filter-judge-list',function(){
+                $(this).toggleClass('filter-judge-hover');
+            })
+            $('.filter-judge-date').on('click','.filter-judge-list',function(){
+                $(this).siblings('.filter-judge-list').removeClass('filter-judge-hover');
+                $('.filter-list-select').hide();
+                $('.filter-list-wide').show();
+            })
+        })
+        $("#start").click(function(){
+            $(this).text("");
+        })
+        $("#end").click(function () {
+            $(this).text("");
+        })
+        layui.use('laydate', function () {
+            var laydate = layui.laydate;
+            
+            var start='';
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#start', //指定元素
+                done: function (value) {
+                    $("#end").attr('placeholder','请选择结束日期')
+                    laydate.render({
+                        elem: '#end', //指定元素
+                        min: value
+                    });
+                }
+            });
+            
+            
+        });
+    </script>
+</body>
+
+</html>

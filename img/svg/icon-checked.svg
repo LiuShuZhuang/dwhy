@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>选中@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="巡店执行" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="任务编辑" transform="translate(-25.000000, -417.000000)">
+            <g id="#1" transform="translate(10.000000, 197.000000)">
+                <g id="01" transform="translate(15.000000, 111.000000)">
+                    <g id="选项" transform="translate(0.000000, 50.000000)">
+                        <g id="选中" transform="translate(0.000000, 59.000000)">
+                            <circle id="Oval" fill="#00BFDB" cx="9" cy="9" r="9"></circle>
+                            <polyline id="Path-5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="5 9.2440785 7.87796075 12.1220392 13 7"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

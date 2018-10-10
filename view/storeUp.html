@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="screen-orientation" content="portrait/landscape">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <base href="../">
+    <link rel="stylesheet" href="static/layui/2.3.0/css/layui.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/public.css"> -->
+    <link rel="stylesheet/less" type="text/css" href="css/public.less">
+    <!-- <link rel="stylesheet" href="static/weui/jquery-weui-1.2.0.min.css">
+    <link rel="stylesheet" href="static/weui/weui-1.1.2.min.css"> -->
+    <title>PayWay门店通</title>
+</head>
+
+<body style="padding-bottom: 1.5rem">
+    <p class="branch-head">上传销量数据</p>
+    <div class="branch-item">
+        <div class="branch-list">
+            <p class="branch-list-title public-emphasis">销售门店</p>
+            <p>上海红星美凯龙店</p>
+        </div>
+        <div class="branch-list">
+            <p class="branch-list-title">产品线</p>
+            <div class="public-select branch-list-c">
+                <select class="branch-list-c">
+                    <option value="">请选择</option>
+                </select>
+            </div>
+        </div>
+        <div class="branch-list">
+            <p class="branch-list-title">产品系列</p>
+            <div class="public-select branch-list-c">
+                <select class="branch-list-c">
+                    <option value="">请选择</option>
+                </select>
+            </div>
+        </div>
+        <div class="branch-list">
+            <p class="branch-list-title">产品代码</p>
+            <div class="public-select branch-list-c">
+                <select class="branch-list-c">
+                    <option value="">请选择</option>
+                </select>
+            </div>
+        </div>
+        <div class="branch-list">
+            <p class="branch-list-title">产品描述</p>
+            <div class="public-select branch-list-c">
+                <select class="branch-list-c">
+                    <option value="">请选择</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="branch-item">
+        <div class="branch-list">
+            <p class="branch-list-title">最近装修日期</p>
+            <div class="public-select">
+                <!-- <input id="date1" type="text"> -->
+                <p id="date1">请选择日期</p>
+            </div>
+        </div>
+        <div class="branch-list">
+            <p class="branch-list-title">产品样机数量</p>
+            <div>
+                <input type="tel" placeholder="请输入数量">
+                台
+            </div>
+        </div>
+    </div>
+
+    <div class="branch-item">
+        <div class="branch-list">
+            <p class="branch-list-title">拍摄发票</p>
+            <img src="img/svg/icon-photo.svg" alt="">
+        </div>
+        <div class="branch-list">
+            <p class="branch-list-title">发票号</p>
+            <div>
+                <input type="tel" placeholder="请输入发票号"> 台
+            </div>
+        </div>
+    </div>
+
+    <div class="branch-item">
+        <div class="branch-list">
+            <p class="branch-list-title">客户手机号</p>
+            <input type="tel" placeholder="请输入手机号">
+        </div>
+        <div class="branch-list">
+            <p class="branch-list-title">地址</p>
+            <input type="text" placeholder="请输入地址">
+        </div>
+    </div>
+
+    <div class="branch-textarea">
+        <p>备注</p>
+        <textarea name="" id="" cols="30" rows="10" placeholder="请输入改变网点属性的理由(100字以内)"></textarea>
+    </div>
+    
+    <div class="public-btn-div public-float-bottom">
+        <a class="public-bottom-btn" href="javascript:void(0)">提交</a>
+    </div>
+    
+    
+    <script src="static/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="static/setSize/setSize.js"></script>
+    <script src="static/less/3.0.4/less.min.js"></script>
+    <script src="static/layui/2.3.0/layui.all.js"></script>
+    <script type="text/javascript" src="static/assets/data.js"></script>
+    <script type="text/javascript" src="static/assets/province.js"></script>
+</body>
+<script>
+    layui.use('laydate', function () {
+            var laydate = layui.laydate;
+
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#date1' //指定元素
+            });
+        });
+</script>
+
+</html>

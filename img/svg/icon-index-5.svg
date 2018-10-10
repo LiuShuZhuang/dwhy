@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="28px" viewBox="0 0 25 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>报表@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="门店管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页_全部应用" transform="translate(-37.000000, -380.000000)">
+            <g id="报表" transform="translate(38.000000, 381.000000)">
+                <g>
+                    <rect id="Rectangle-2" fill="#FFFFFF" x="20.16" y="7.2" width="3.84" height="19.8"></rect>
+                    <rect id="Rectangle-2-Copy" fill="#FFFFFF" x="13.44" y="11.7" width="3.84" height="15.3" rx="1"></rect>
+                    <rect id="Rectangle-2-Copy-2" fill="#FFFFFF" x="6.72" y="15.3" width="3.84" height="11.7" rx="1"></rect>
+                    <rect id="Rectangle-2-Copy-3" fill="#FFFFFF" x="0" y="17.1" width="3.84" height="9.9" rx="1"></rect>
+                    <path d="M0.12234375,12.6547119 C8.728125,10.6733643 16.15875,6.63105469 22.4142187,0.527783203" id="Path-4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                    <polyline id="Path-5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="18.72 0 22.971898 0 22.971898 4.32960861"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
